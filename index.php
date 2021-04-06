@@ -12,3 +12,6 @@ define('APP_DEBUG', true);
 
 // 网站根url
 define('APP_URL', 'http://localhost/phpframe/');
+
+// 加载框架
+require_once './FastPHP.php';
