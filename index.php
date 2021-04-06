@@ -8,7 +8,8 @@ printLine("index.php");
 define('APP_PATH', __DIR__.'/');
 
 // 开启调试模式
-define('APP_DEBUG', true);
+define('APP_DEBUG', true); // todo:单独的config文件
+//define('APP_DEBUG', false);
 
 // 网站根url
 define('APP_URL', 'http://localhost/phpframe/');
