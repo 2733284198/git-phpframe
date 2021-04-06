@@ -86,7 +86,7 @@ Class Core
         $frameworks = FRAME_PATH . $class . '.class.php';
         $controllers = APP_PATH . 'application/controllers/' . $class . '.class.php';
         $models = APP_PATH . 'application/models/' . $class . '.class.php';
-        $views = APP_PATH . 'application/view/' . $class . '.class.php';
+        $views = APP_PATH . 'application/views/' . $class . '.class.php';
         if (file_exists($frameworks)) {
             // 加载框架核心类
             include $frameworks;
