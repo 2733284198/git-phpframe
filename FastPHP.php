@@ -12,8 +12,9 @@ defined('RUNTIME_PATH') or define('RUNTIME_PATH', APP_PATH.'runtime/');
 require APP_PATH . 'config.php';
 
 //包含核心框架类
-//require FRAME_PATH . 'Core.php';
+require FRAME_PATH . 'Core.php';
+//printLine(FRAME_PATH);
 
 // 实例化核心类
-//$fast = new Core;
-//$fast->run();
+$fast = new Core;
+$fast->run();
