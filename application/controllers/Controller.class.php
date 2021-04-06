@@ -15,6 +15,7 @@ class Controller
         $this->_controler = $controler;
         $this->_action = $action;
 
+//        require_once 'view.class.php';
         $this->_view = new View($controler, $action);
     }
 
