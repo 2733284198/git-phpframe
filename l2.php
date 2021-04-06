@@ -27,6 +27,23 @@ $myClass = function ($className){
 
 spl_autoload_register($myClass);
 
+// 加载工具类
+require_once "tools.php";
+printLine();
+
 //require_once "./c1.php";
 $user1 = new User();
 echo $user1->getInfo();
+
+//echo '<br><hr>';
+printLine();
+$user1 = new Student();
+echo $user1->getInfo();
+
+//echo '<br><hr>';
+printLine();
+$user1 = new Teacher();
+echo $user1->getInfo();
+
+//echo '<br><hr>';
+printLine();
