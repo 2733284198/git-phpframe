@@ -13,7 +13,7 @@
 
 ```php
 
-传递参数 name2
+
 ```
 
 ![img_2.png](img_2.png)

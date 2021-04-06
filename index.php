@@ -15,4 +15,4 @@ define('APP_DEBUG', true); // todo:单独的config文件
 define('APP_URL', 'http://localhost/phpframe/');
 
 // 加载框架
-require_once './FastPHP.php';
+require_once './EasyPhp.php';
