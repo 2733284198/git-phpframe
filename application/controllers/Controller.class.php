@@ -15,7 +15,7 @@ class Controller
         $this->_controler = $controler;
         $this->_action = $action;
 
-//        $this->_view = new View
+        $this->_view = new View($controler, $action);
     }
 
     // 分配变量

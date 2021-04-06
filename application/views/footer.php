@@ -1,1 +1,3 @@
-<?php
+<div>
+    footer.php
+</div>
