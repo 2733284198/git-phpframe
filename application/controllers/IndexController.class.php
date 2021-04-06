@@ -15,7 +15,7 @@ class IndexController extends Controller
     public function item()
     {
         $items = (new ItemModel)->selectAll();
-        var_dump($items);
+//        var_dump($items);
 
         $this->assign('title', '全部条目');
         $this->assign('items', $items);
