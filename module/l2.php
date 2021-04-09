@@ -17,7 +17,7 @@ echo '<br><hr>Current PHP version: ' . phpversion(). '<br><hr>';
    }
 });*/
 
-// 自动加载2
+// 自动加载2 1
 $myClass = function ($className){
     $filePath = "./$className.php";
     if (file_exists($filePath)){
