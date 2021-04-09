@@ -4,7 +4,7 @@ Class Core
 {
     // 运行程序
     function run(){
-        printLine(__METHOD__);
+//        printLine(__METHOD__);
 
         spl_autoload_register(array($this,'loadClass'));
         $this->Route();

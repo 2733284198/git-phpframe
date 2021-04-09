@@ -2,7 +2,7 @@
 
 // 加载工具类
 require_once "tools.php";
-printLine("index.php");
+//printLine("t2.php");
 
 // 应用程序目录
 define('APP_PATH', __DIR__.'/');

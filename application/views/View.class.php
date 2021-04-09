@@ -23,10 +23,11 @@ class View
     {
         extract($this->variables);
 
-        $defaultHeader = APP_PATH . 'public/views/header.php';
-        $defaultFooter = APP_PATH . 'public/views/footer.php';
-        $controllerHeader = APP_PATH . 'public/views/' . $this->_controller . '/header.php';
-        $controllerFooter = APP_PATH . 'public/views/' . $this->_controller . '/footer.php';
+        $defaultHeader = APP_PATH . 'public/views/t2.php';
+        $defaultFooter = APP_PATH . 'public/views/t1.php';
+
+        $controllerHeader = APP_PATH . 'public/views/' . $this->_controller . '/t2.php';
+        $controllerFooter = APP_PATH . 'public/views/' . $this->_controller . '/t1.php';
 
         // 页头文件
         if (file_exists($controllerHeader)) {

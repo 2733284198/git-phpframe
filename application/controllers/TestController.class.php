@@ -10,9 +10,17 @@ use Doctrine\ORM\Query\ResultSetMapping;
 class TestController extends Controller
 {
     function index(){
-        printLine(__CLASS__);
-        printLine(__METHOD__);
+//        printLine(__CLASS__);
+//        printLine(__METHOD__);
     }
+
+    /*public function __callstatic(){
+            echo(__METHOD__);
+    }
+
+    public function __call(){
+            echo(__METHOD__);
+    }*/
 
     function t1(){
         $paths = array("/path/to/entity-files");
@@ -28,21 +36,21 @@ class TestController extends Controller
             'dbname' => 'todo6',
         );
 
-//
         $config = new \Doctrine\DBAL\Configuration();
         $conn = \Doctrine\DBAL\DriverManager::getConnection($dbParams, $config);
 
         echo "<h1>fetchAll（获取全部）, fetchAssoc（获取行）, fetchColumn（获取单个）示例</h1>";
         $users = $conn->fetchAll('SELECT * FROM alarm_sound_library ');
-//        var_dump($users);
         dump($users);
 
-        exit('11');
-
-
+        $this->assign('title', '全部条目');
     }
 
     function t2() {
+        echo '<hr>t2';
+    }
+
+    function t3() {
         $paths = array("/path/to/entity-files");
         $isDevMode = false;
 
@@ -66,4 +74,10 @@ class TestController extends Controller
         $users = $query->getResult();
         var_dump($users);
     }
+
+    public function tstrh(){
+        $str = new \StringhelperController("  sd f  0");
+        echo $str->trim('0')->strlen();
+    }
+
 }

@@ -4,5 +4,5 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# 重定向所有请求到 index.php?url=PATHNAME
+# 重定向所有请求到 t2.php?url=PATHNAME
 RewriteRule ^(.*)$ index.php?url=$1 [PT,L]
